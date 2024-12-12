@@ -1,0 +1,310 @@
+/* * 代表文档中的所有元素都将应用margin: 0和padding: 0的样式规则。
+margin是外边距，padding是内边距，将它们都设置为 0，
+通常用于在页面布局的开始阶段重置所有元素的默认边距和内边距，
+以便在后续的样式设计中能有一个统一的起点。 */
+* {
+    /* 外边距 */
+    margin: 0;
+    /* 内边距 */
+    padding: 0;
+}
+
+header {
+    width: 100%;
+    height: 100px;
+    background-color: black;
+}
+
+/* 后代选择器：两个选择器之间用空格隔开 */
+.center {
+    width: 1100px;
+    height: 100px;
+    /* 居中 */
+    margin: 0 auto;
+    /* 弹性布局 */
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 180px;
+    height: 100px;
+}
+
+.logo img {
+    width: 180px;
+    height: 100px;
+}
+
+.search {
+    width: 400px;
+    height: 100px;
+    display: flex;
+}
+
+.person {
+    width: 45px;
+    height: 45px;
+    background-color: white;
+    /* 设置向上的距离 */
+    margin-top: 27px;
+    border-radius: 50%;
+
+
+}
+
+.search input {
+    width: 300px;
+    height: 45px;
+    margin-top: 23px;
+    /* 去除边框 */
+    outline: none;
+    border: none;
+    border-radius: 20px 0 0 20px;
+    /* 内填充 */
+    padding-left: 10px;
+}
+
+.btn {
+    width: 100px;
+    height: 45px;
+    margin-top: 23px;
+    background-color: #ff5c38;
+    border-radius: 0 20px 20px 0;
+    /* 左右居中 */
+    text-align: center;
+    line-height: 42px;
+    color: white;
+}
+
+.person img {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+}
+
+#banner {
+    width: 100%;
+    height: 500px;
+}
+
+#banner img {
+    width: 100%;
+    height: 500px;
+}
+
+#menu {
+    width: 1100px;
+    height: 100px;
+    margin: 10px auto;
+    display: flex;
+}
+
+#menu .left1 {
+    width: 600px;
+    height: 100px;
+    display: flex;
+    /* 换行 */
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#menu .center1 {
+    width: 240px;
+    height: 100px;
+    margin-left: 15px;
+    padding-left: 10px;
+}
+
+#menu .right1 {
+    width: 100px;
+    height: 100px;
+}
+
+#menu .eachone {
+    width: 170px;
+    height: 40px;
+    border-radius: 25px;
+    /* 文本居中 */
+    text-align: center;
+    line-height: 42px;
+
+}
+
+#menu .eachone span {
+    font-size: 14px;
+}
+
+#menu .eachone .title1 {
+    color: black;
+    /* 字体加粗 */
+    font-weight: bold;
+}
+
+#menu .center1 span {
+    /* 转换成内联块级元素 目的是可以调整宽度高度 */
+    display: inline-block;
+    width: 55px;
+    height: 40px;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 40px;
+    margin-top: 5px;
+}
+
+#menu .right1 img {
+    width: 80px;
+    height: 80px;
+    margin-top: 13px;
+    padding-left: 45px;
+}
+
+#choose {
+    width: 1100px;
+    height: 180px;
+    margin: 0 auto;
+}
+
+#choose .title1 {
+    height: 40px;
+    font-size: 20px;
+    line-height: 40px;
+    padding-left: 10px;
+}
+
+#choose .messes1 {
+    height: 140px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#choose .showmess .top {
+    width: 160px;
+    height: 90px;
+}
+
+#choose .showmess img {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+}
+
+#choose .showmess .content {
+    width: 160px;
+    height: 50px;
+    font-size: 12px;
+    color: #676767;
+    padding-left: 5px;
+    line-height: 20px;
+}
+
+#choose .showmess .atten {
+    color: black;
+    font-weight: bold;
+}
+
+#movie {
+    width: 1100px;
+    height: 600px;
+    margin: 10px auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+#movie .leftArea {
+    width: 790px;
+    height: 600px;
+}
+
+#movie .rightArea {
+    width: 300px;
+    height: 600px;
+}
+
+#movie .leftArea .title2 {
+    height: 40px;
+    padding-left: 10px;
+    line-height: 40px;
+    font-size: 20px;
+}
+
+#movie .movieMess {
+    height: 560px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#movie .movieMess .onemovie {
+    width: 170px;
+    height: 260px;
+}
+
+#movie .movieMess .moviepicture {
+    width: 170px;
+    height: 220px;
+}
+
+#movie .movieMess img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+#movie .movieMess .moviecontent {
+    font-size: 14px;
+    color: #464646;
+    padding-left: 7px;
+    line-height: 20px;
+}
+
+#movie .movieMess .atten {
+    color: black;
+    font-weight: bold;
+}
+
+#movie .rightArea .title3 {
+    height: 40px;
+    padding-left: 10px;
+    line-height: 40px;
+    font-size: 20px;
+}
+
+#movie .rightArea .list {
+    height: 560px;
+    line-height: 50px;
+    padding-left: 20px;
+    background-color: #f8f8f8;
+}
+
+#movie .rightArea p {
+    width: 90%;
+    margin: 0 auto;
+    border-bottom: 1px solid #eeeeee;
+}
+
+#movie .rightArea span {
+    padding-right: 16px;
+    font-size: 18px;
+}
+
+#movie .rightArea .num {
+    color: #ff5c38;
+}
+
+footer {
+    height: 80px;
+    margin-top: 10px;
+    border-top: 2px solid #ff5c38;
+    text-align: center;
+    font-size: 12px;
+    padding-top: 20px;
+    line-height: 30px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
